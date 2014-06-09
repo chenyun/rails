@@ -1,3 +1,5 @@
+# 一个gem必须暴露一个Gem::Specification对象
+# 注意这里并没有require gem本身的代码，所以version是通过读文件的方式获取的
 version = File.read(File.expand_path('../RAILS_VERSION', __FILE__)).strip
 
 Gem::Specification.new do |s|
